@@ -1,0 +1,14 @@
+<view class="header" style="height: {{ statusBarHeight + 44 }}px;">
+  <view class="logo-box"  wx:if="{{ hasLogo }}">
+    <image src="/pages/assets/img/logo-icon.png" mode="" class="logo-img"/>
+  </view>
+  <view wx:if="{{hasNull}}"></view>
+  <view class="home-button" bindtap="goHome" wx:if="{{!hasLogo && !hasNull}}" >
+    <image src="/pages/assets/img/home.png" class="img-icon" />
+    <view class="text"> 诊学记录 </view>
+    <image src="/pages/assets/img/right.png" mode="" class="img-icon2" />
+  </view>
+  
+  <view class="title">{{ title }}</view>
+  <image src="/pages/assets/img/header1.png" alt="" class="header-bg" />
+</view>

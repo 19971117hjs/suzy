@@ -1,0 +1,158 @@
+.homePage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #F6F6F6;
+  z-index: 1;
+}
+
+.t1 {
+  position: relative;
+  height: 246rpx;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 2;
+  background-color: #F6F6F6;
+  background-size: cover;
+  /* background: linear-gradient(to bottom,  #FFD2A8,#FFEBD4); */
+
+
+  padding: 0 60rpx 0 44rpx;
+}
+.t1-bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* height: 100vh; */
+  z-index: -1;
+  background-color: #F6F6F6;
+
+ 
+}
+
+.t1-left {
+  height: 112rpx;
+  gap: 24rpx;
+  position: relative;
+  top: 16rpx;
+  z-index: 2;
+}
+
+.logo-text {
+  width: 224rpx;
+
+
+}
+
+.logo-tip {
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-weight: 400;
+  text-align: left;
+  color: #485C61;
+  z-index: 2;
+
+}
+
+.t1-icon {
+  height: 172rpx;
+  width: 172rpx;
+  z-index: 2;
+}
+.t2{
+  position: absolute;
+  height: calc(100vh - 560rpx);
+  box-sizing: border-box;
+  padding: 0 32rpx;
+  width: 100%;
+  /* overflow-y: auto; */
+  z-index: 9999;
+
+}
+.card{
+  width: calc(100% - 64rpx);
+/* height: 214rpx; */
+padding: 24rpx;
+gap: 32rpx;
+border-radius: 18rpx;
+margin-top: 24rpx;
+background-color: #FFFFFF;
+/* box-shadow: 0px 6px 6px -5px rgba(0, 0, 0, 0.5); */
+box-shadow: 0px 4px 6px 0px #32595C1A;
+cursor: pointer;
+-webkit-tap-highlight-color: transparent; 
+}
+.card-left{
+  width: 136rpx;
+height: 166rpx;
+border-radius: 12rpx;
+}
+.cl-1{
+  background-color: #E8FFED;
+}
+.cl-2{
+  background-color: #FFF8E8;
+}
+.cl-3{
+  background-color: #E8F4FF;
+}
+.cl-4{
+background-color: #FFF3E8;
+}
+.cl-icon{
+  width: 88rpx;
+  height: 80rpx;
+}
+.card-right{
+  justify-content: space-between;
+  gap: 24rpx;
+}
+.cr-t1{
+  font-family: PingFang SC;
+  text-align: left;
+
+}
+.cr-t1-1{
+  font-size: 32rpx;
+  font-weight: 600;
+  color:#1D2729;
+}
+.cr-t1-2{
+font-size: 28rpx;
+font-weight: 400;
+color:#71858A;
+}
+.avator-img{
+  width: 104rpx;
+  height: 48rpx;
+  padding-left: 12rpx;
+}
+
+
+.t3 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 128rpx;
+  background-color: #F6F6F6;
+  z-index: 99;
+}
+
+.t3-btn {
+  width: calc(100% - 64rpx);
+  height: 112rpx;
+
+  border-radius: 36rpx;
+  background: linear-gradient(90deg, #485C61 0%, #1D2729 100%);
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+
+
+}

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "CommonJS",
+    "types": [
+      "miniprogram-api-typings"
+    ],
+  }
+}

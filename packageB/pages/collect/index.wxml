@@ -1,0 +1,90 @@
+<view class="all-box">
+
+<header title="" bgImage="/pages/assets/img/header.png" hasNull='{{true}}'></header>
+<van-nav-bar
+title="{{stepIdx===1 ? '选择报告' :'选择学校'}}"
+left-arrow
+bind:click-left="last"
+fixed='{{true}}'
+custom-style="background-color:transparent"
+/>
+<view class="t1" >
+  <image src="/pages/assets/img/header2.png" mode="" class="t1-bg"/>
+
+  <view class="top flex f-col">
+    <view>进度 <text class="p1">{{stepIdx}}</text>/2</view>
+    <van-progress percentage="{{stepIdx*50}}" show-pivot='{{false}}' stroke-width='12'
+    track-color='#FAC981' color='linear-gradient(90deg, #FF6815 0%, #FF7325 100%)' custom-class='mystep'/>
+  </view>
+</view>
+
+<scroll-view scroll-y="auto" class="main">
+<view class="card">
+  <view class="que-title">
+    {{stepIdx === 1 ? '选择诊学报告' : '选择目标院校层次'}}
+  </view>
+  <view class="que-li flex f-yc {{schoolIdx === index ? 'li-select' : ''}}" wx:for="{{schoolOptions}}" wx:for-item="item" wx:key="index"
+  data-value='{{index}}' bindtap='selectSchool' wx:if="{{stepIdx===2}}">
+    <view class="que-radio1 flex f-c-c" wx:if="{{schoolIdx === index}}">
+      <view class="que-radio2"></view>
+    </view>
+    <view wx:else class="que-radio"></view>
+    <view>{{item}}</view>
+  </view>
+  <view class="form-box flex f-col" wx:if="{{stepIdx===1}}">
+      <view class="form-label">选择科目</view>
+      <view class="form-li {{ subjectKey==='' && isCheck ? 'err-li' :''}}">
+        <van-cell title="{{subjectKey===''? '请选择 Please select' : subjectName}}" 
+        data-value='subject'
+        bind:click="showPopup"  custom-style="background: linear-gradient(90deg, #F0FEF6 0%, #FEFCF1 100%);color:rgba(78, 89, 105, 1);border-radius: 8px;height: calc(100% - 2rpx);overflow:hidden;" title-style="flex:1;display:block !important;{{subjectKey==='' ? 'color:#c8c9cc' :'color:#323233'}}" />
+      </view>
+      <view class="form-label">选择报告</view>
+      <view class="form-li {{ projectKey=='' && isCheck ? 'err-li' :''}}">
+        <van-cell title="{{projectKey==='' ? '请选择 Please select' : projectName}}" 
+        data-value='project'
+        bind:click="showPopup"  custom-style="background: linear-gradient(90deg, #F0FEF6 0%, #FEFCF1 100%);color:rgba(78, 89, 105, 1);border-radius: 8px;height: calc(100% - 2rpx);overflow:hidden;" title-style="flex:1;display:block !important;{{projectKey==='' ? 'color:#c8c9cc' :'color:#323233'}}"/>
+      </view>
+
+      <view class="null-tip" bindtap="toHome">没有报告？现在去测>></view>
+
+
+   
+  </view>
+
+  <van-popup show="{{ showDict.subject }}" position="bottom" round >
+      <van-picker
+        show-toolbar
+        title="科目"
+        data-value='subject'
+        columns="{{ subjectOptions }}"
+        bind:cancel="onClosePopup"
+        bind:confirm="onConfirmPopup"
+        default-index="{{ subjectKey }}"
+      />
+  </van-popup>
+
+  <van-popup show="{{ showDict.project }}" position="bottom" round  closeable  bind:close="onClosePopup" data-value="project">
+  <view class="projectTitle flex f-c-c">选择报告</view>
+    <scroll-view scroll-y="{{true}}" class="projectList">
+     <view class="pj-li" wx:for="{{projectOptons}}" wx:for-item="item" wx:key="index">
+      <van-checkbox value="{{ selectProjectKey===item.id }}" shape="square" checked-color='#FF6815' custom-class='my-checkbox' data-value="{{item.id}}" bindtap='changeProject'>
+         <view class="flex f-col" style="gap:8rpx;padding-left:32rpx">
+           <view class="pli-1 esp f-1">{{item.name}}</view>
+           <view class="pli-2 flex f-yc">学习力值：<text class="pli-value">{{item.studyNum}}</text></view>
+           <view class="pli-2 flex f-yc">预估院校：<text class="pli-value">{{item.school}}</text></view>
+           <view class="pli-2 flex f-yc">报告编号：<text class="pli-value">{{item.id}}</text></view>
+         </view>
+     </van-checkbox>
+     </view>
+     <view style="height: 58px; width: 100%;"></view>
+    </scroll-view>
+    <footer confirmName="确定"   bind:next='onConfirmPopup'  data-value='project'>
+    </footer>
+  </van-popup>
+
+</view>
+</scroll-view>
+
+<footer confirmName="{{stepIdx === 2 ? '提交' :'下一步'}}"   bind:next='next'>
+</footer>
+</view>

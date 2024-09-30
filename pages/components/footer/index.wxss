@@ -1,0 +1,61 @@
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 128rpx;
+  background-color: #F6F6F6;
+  z-index: 99;
+  gap:20rpx;
+  padding: 24rpx;
+}
+
+.footer-btn {
+  width: auto;
+  height: 112rpx;
+  border-radius: 36rpx;
+  background: linear-gradient(90deg, #485C61 0%, #1D2729 100%);
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer-btn-back {
+  width: 30%;
+  height: 112rpx;
+
+  border-radius: 36rpx;
+  background: #ffffff;
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #1D2729;
+
+
+}
+
+.flex{
+  display: flex
+}
+.f-yc{
+  align-items: center;
+}
+.f-xc{
+  justify-content: center;
+}
+.f-col{
+  flex-direction: column;
+}
+.f-1{
+  flex:1;
+}
+.f-c-c{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}

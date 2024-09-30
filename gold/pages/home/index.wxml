@@ -1,0 +1,175 @@
+<view class="all-box">
+
+  <van-nav-bar
+title="{{title}}金榜之路"
+left-arrow
+bind:click-left="last"
+fixed='{{true}}'
+custom-style="background:rgb(255,173,49,0.9814);z-index:99999"
+/>
+<scroll-view scroll-y="auto" class="main">
+
+<view class="box1">
+  <view class="t1 flex ">
+    <image src="../../assets/img/chinese.png" mode="" class="t1-img"/>
+  </view>
+  <view class="t2 flex f-yc">
+  <image src="../../assets/img/star-min.png" mode="" class="t2-img"/>
+    <view>优化后学习力</view>
+  
+    <view class="t2-text flex f-yc"><text class="t2-bold">{{studyNum}}</text>/满分150</view>
+  </view>
+  <image src="../../assets/img/gold-star.png" mode="" class="box1-img"/>
+</view>
+<view class="box2">
+ <image src="../../assets/img/text1.png" mode="" class="b2-img1"/>
+ <view class="b2-t1">目标院校：顶尖 985</view>
+ <view class="b2-t2">
+   <image src="../../assets/img/rank-icon.png" mode="" class="rank-img"/>
+   <view class="bt2-t1">
+     {{userData.name}}
+   </view>
+   <view class="flex f-yc bt2-t2">
+     <view>{{userData.gradeName}}</view>
+     <view>|</view>
+     <view>当前学习力</view>
+     <view>{{userData.studyNumOld}}</view>
+   </view>
+   <view class="bt2-t3">
+    <image src="../../assets/img/box2-bg1.png" mode="" style="width:100%;"/>
+    <view  class="flex bt2-t3-box1">
+      <view class='f-1'>
+        <view class="bt3-title1" style="padding-top:10rpx">优化前概率：</view>
+        <view class="flex f-yc bt2-t3-li" wx:for="{{userData.schoolDataOld}}"  wx:key="index">
+          <view class="bt3-label">{{item.label}}</view>
+          <view class="bt3-num">{{item.value}}%</view>
+          <image src="../../assets/img/max.png" mode="" class="bt3-max" wx:if="{{item.isMax}}"/>
+
+        </view>
+      </view>
+      <view class='f-1'>
+        <view class="bt3-title2">优化后概率：</view>
+        <view class="flex f-yc bt2-t3-li" wx:for="{{userData.schoolDataOld}}"  wx:key="index">
+          <view class="bt3-label">{{item.label}}</view>
+          <view class="bt3-num">{{item.value}}%</view>
+          <image src="../../assets/img/max.png" mode="" class="bt3-max" wx:if="{{item.isMax}}"/>
+        </view>
+      </view>
+    </view>
+   </view>
+  
+   <view class="bt2-t4">
+     <image src="../../assets/img/box3-bg1.png" mode="" class="bt2-t4-img"/>
+     <view class="bt2-t4-1">
+       <image src="../../assets/img/box3-title-icon.png" mode="" style="width:34rpx;height:32rpx"/>
+       <view class="bt2-t4-1bold">经大数据算法匹配</view>
+       <view>与你优化后的学习力最相近的三位目标院校的大学生分别是：</view>
+       <view class="bt2-t4-li" wx:for="{{userData.studentList}}" wx:key="index" style="{{index===2 ? 'border-bottom:0' : ''}}">
+         <view class="bt2-t4-li1">{{item.schoolName}}</view>
+         <view class="bt2-t4-li2">{{item.name}}</view>
+         <view class="bt2-t4-li3 flex f-yc">学习力：<text class="bt2-t4-li4">{{item.studyNum}}</text></view>
+
+       </view>
+      
+     </view>
+     <view class="bt2-t4-foot">
+        注：「金榜之路」所预估的大学概率是基于参测人员主观作答数据综合分析得出，旨在辅助家长优化教育方案，不作为最终高考成绩的推定。
+       </view>
+   </view>
+ </view>
+
+</view>
+
+<view class="box3">
+  <image src="../../assets/img/box3-text1.png" mode="" style="width:352rpx;height:52rpx;"/>
+  <view class="box3-t1">与目标院校的三位大学生进行10个维度对比</view>
+
+
+  <view>
+    <van-sticky offset-top="{{ navBarHeight }}">
+      <view class="tab-box flex f-c-c">
+        <view
+          class="{{ tabIdx == 1 ? 'tab-li-selected' : 'tab-li' }}"
+          bindtap="changeTab"
+          data-idx="1"
+          style="flex:1"
+        >
+        <image
+            src="../../../pages/assets/img/tab-select.png"
+            mode=""
+            class="tab-selected-icon"
+            wx:if="{{ tabIdx == 1 }}"
+          />
+          学习能力对比
+          
+        </view>
+        <view
+        style="flex:1"
+          class="{{ tabIdx == 2 ? 'tab-li-selected' : 'tab-li' }}"
+          bindtap="changeTab"
+          data-idx="2"
+        >
+        <image
+            src="../../../pages/assets/img/tab-select.png"
+            mode=""
+            class="tab-selected-icon"
+            wx:if="{{ tabIdx == 2 }}"
+          />
+          精准提升计划
+          
+        </view>
+      </view>
+      <view style="position: relative;background: #F6F6F6">
+          <scroll-view class="btn-ul flex" scroll-x="auto">
+            <view
+              wx:for="{{ subjectDict[subject].queryList }}"
+              wx:for-item="item"
+              wx:key="value"
+              data-value="{{ item.value }}"
+              bindtap="changeQueryValue"
+              class="btn-li flex f-c-c {{queryValue == item.value ? 'btn-li-selected' : ''}}"
+            >
+              {{ item.label }}
+            </view>
+          
+          </scroll-view>
+          <view class="more-box flex f-c-c" bindtap = "openMore">
+            <image src="../../../pages/assets/img/more-icon1.png" mode="" class="more-icon"/>
+          </view>
+          <view class="more-popup flex {{isShowMore ? 'more-popup-active' : ''}}" wx:if="{{isShowMore}}">
+            <view
+            wx:for="{{ subjectDict[subject].queryList }}"
+            wx:for-item="item"
+            wx:key="value"
+            data-value="{{ item.value }}"
+            bindtap="changeQueryValue"
+            class="btn-li0 flex f-c-c {{queryValue == item.value ? 'btn-li0-selected' : ''}}"
+            >
+              {{ item.label }}
+            </view>
+            
+          </view>
+          
+        
+          
+          <!-- <tab-box></tab-box> -->
+      </view>
+      </van-sticky>
+      <tab-box></tab-box>
+
+
+    
+    
+  </view>
+
+  <view style="height: 300rpx;width: 100%;"></view>
+</view>
+
+
+ 
+
+</scroll-view>
+
+<footer confirmName="分享朋友"   bind:next='next'>
+</footer>
+</view>

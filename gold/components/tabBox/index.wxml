@@ -1,0 +1,57 @@
+<view class="tab0">
+  <view class="tab0-title">
+  <image src="../../../pages/assets/img/tab0-icon1.png" mode="" style="width:86rpx;height:40rpx;"/>
+  <text style="position: absolute;left: 10rpx;">{{tabBoxData.title}}</text>
+  </view>
+  <view class="tab0-li" wx:for="{{tabBoxData.list}}" wx:key="index">
+    <view class="tab0-li-title flex f-yc">
+     <view> 0{{index+1}}.{{item.title}}</view>
+     <view class="title-num flex f-yc">
+     效应量{{item.num}}
+     </view>
+    
+    </view>
+    <view class="tab0-li-content">{{item.text}}</view>
+
+    <view style="width:100%;height: 464rpx;gap:8rpx;position: relative;" class="flex">
+    <view class="tab0-left"></view>
+    <view class="tab0-right flex f-col">
+      <view class="f-1 flex" style=" border-right:2rpx dashed #e7edef;">
+        <view class="f-1 bl"></view>
+        <view class="f-1 bl"></view>
+        <view class="f-1 bl"></view>
+        <view class="f-1 bl"></view>
+      </view>
+      <view style='width: 100%;height: 20rpx;'></view>
+      <view class="tr-bb">
+        <view class="flex" style="border-right: 2rpx solid #8C9FA3;">
+          <view class='f-1 lb'></view>
+          <view class='f-1 lb'></view>
+          <view class='f-1 lb'></view>
+          <view class='f-1 lb'></view>
+        </view>
+        <view class="flex" style="position: relative;">
+        <view class="f-1 text-end" style="{{index===0 ? 'position: absolute;left: -30rpx;' : index!==4 ?'position:relative;left:30rpx' : ''}}" wx:for="{{item.xList}}" wx:key="index" >{{item}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="stu-li flex" wx:for="{{item.stuList}}" wx:key="index" style="top:{{index*100}}rpx">
+    <view style="width:72rpx;height:72rpx">
+      <image src="../../../pages/assets/img/stu-1.png" mode="" style="width:72rpx;height:72rpx" wx:if="{{index==0 || index == 1}}"/>
+      <image src="../../../pages/assets/img/stu-2.png" mode="" style="width:72rpx;height:72rpx" wx:if="{{index==2}}"/>
+      <image src="../../../pages/assets/img/stu-3.png" mode="" style="width:72rpx;height:72rpx" wx:if="{{index==3}}"/>
+    </view>
+     
+      <view class="flex f-col bar f-1" style="justify-content:space-around;position: relative">
+        <view wx:if="{{index==0}}">999</view>
+        <view wx:else>
+          {{item.school}}
+         <text>学生{{stuDict[index]}}</text>
+        </view>
+        <view class="{{index ==0 ? 'bar0' :'bar1'}}" style="width:{{item.num*25}}%"></view>
+      </view>
+    </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,23 @@
+<van-overlay show="{{ isShow }}" >
+  <view class="wrapper">
+
+    <view class="block">
+      <view class="title-text">诊学报告分数设计规则</view>
+      <scroll-view class="content-text" scroll-y="{{true}}">
+        <view class="content-text">诊学报告是基于你的答题数据，</view>
+        <view class="content-text">与「普通学生」，</view>
+        <view class="content-text">而非学习力为0的学生进行对比。</view>
+        <view class="bold content-text">普通学生指所有题目均选择第3个选项的学习力为75的学生。</view>
+        <view class="content-text">因此，如果你的选项</view>
+        <view class="content-text">比第3个选项好，得正分;</view>
+        <view class="content-text">比第3个选项差，得负分;</view>
+        <view class="content-text">选择第3个选项，得0分。</view>
+        <view class="content-text">以小红为例，她主动学习得分(2.3/6.8)意味着她比普通学生高出2.3分，而最优秀的学生则比普通学生高出6.8分。故6.8分为主动学习维度的满分。</view>
+        <view class="content-text">计划执行得分为(0/8.3)，0分意味着她与普通学生选择没有区别，而最优秀的学生则比普通学生高出8.3分，8.3分为计划执行维度的满分。</view>
+        <view class="content-text">学习习惯得分为(-2.5/10.0)，意味着她比普通学生低2.5分，而最优秀的学生则比普通学生高出10.0分。10.0分为学习习惯维度的满分。</view>
+        <view class="content-text">此原则适用于诊学报告的所有得分。</view>
+      </scroll-view>
+      <view class="footer-btn1 f-c-c" bindtap='goNext'>关闭</view>
+    </view>
+  </view>
+</van-overlay>

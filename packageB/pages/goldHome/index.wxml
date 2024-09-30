@@ -1,0 +1,517 @@
+<scroll-view class="goldHome" scroll-y="{{true}}">
+    <!-- <van-nav-bar
+      title=""
+      left-arrow
+      bind:click-left="goBack"
+      fixed='{{true}}'
+      custom-style='background-color:transparent;'
+      custom-class='my-nav'
+    /> -->
+    <image src="../../assets/img/home1.png" mode="widthFix" class="img1"/>
+    <image src="../../assets/img/home2.png" mode="widthFix" class="img2"/>
+
+    <view class="main">
+
+        <view class="cc">
+          <view class="cc2"></view>
+          <view class="cc1 flex f-c-c">
+            <text>对教育和学习，你是否有这些痛苦</text>
+            <image src="../../assets/img/tt1.icon.png" mode="" class="tt1-img"/>
+          </view>
+          <view class="cc3 flex f-yc">
+          <image src="../../assets/img/t1-c1.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r1">常常感到迷茫焦虑</view>
+              <view class="cc3-r2">家长焦虑、孩子痛苦，亲子关系紧张</view>
+            </view>
+          </view>
+          <view class="cc3 flex f-yc" >
+          <image src="../../assets/img/t1-c2.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r1">纠结自己现在的教育方式</view>
+              <view class="cc3-r2">感觉自己的教育方式出了问题，但找不到根本原因，希望得到改善的可操作性方法</view>
+            </view>
+          </view>
+          <view class="cc3 flex f-yc" >
+          <image src="../../assets/img/t1-c3.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r1">孩子未来能考入好大学吗？</view>
+              <view class="cc3-r2">不了解如何提升真正影响成绩的学习力，只能看到分数波动，焦虑难以消除</view>
+            </view>
+          </view>
+          <view class="cc3 flex f-yc" >
+          <image src="../../assets/img/t1-c4.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r1">孩子的学习能力到底如何？</view>
+              <view class="cc3-r2">不清楚和目标院校大学生对比，孩子学习能力的优缺点，以及具体提升路径是什么</view>
+            </view>
+          </view>
+          <view style="width: 100%;height: 1rpx;"></view>
+        
+        </view>
+
+
+        <view class="cc" style="margin-top: 120rpx;">
+          <view class="cc2"></view>
+          <view class="cc1 flex f-c-c">
+            <text>如果你想</text>
+            <image src="../../assets/img/tt1.icon.png" mode="" class="tt1-img"/>
+          </view>
+          <view class="cc3 flex f-yc">
+          <image src="../../assets/img/t2-c1.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r3">拥有幸福和谐的亲子关系，建立科学正确的教育学习体系，减轻焦虑痛苦</view>
+            </view>
+          </view>
+          <view class="cc3 flex f-yc" >
+          <image src="../../assets/img/t2-c2.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r3">全面系统具体地对比孩子和不同名校学霸在学习模式上的相同点和不同点</view>
+            </view>
+          </view>
+          <view class="cc3 flex f-yc" >
+          <image src="../../assets/img/t2-c3.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r3">预知孩子考入不同层次大学的概率，提前优化教育计划，重塑命运，走上名校之路</view>
+            </view>
+          </view>
+          <view class="cc3 flex f-yc" >
+          <image src="../../assets/img/t2-c4.png" mode="" class="cc3-icon"/>
+            <view class='f-1 flex f-col' style="gap:16rpx"> 
+              <view class="cc3-r3">定位影响孩子成绩关键因素，定制专属提升规划，显著提升考入顶尖高校的概率</view>
+            </view>
+          </view>
+          <view style="width: 100%;height: 1rpx;"></view>
+        </view>
+
+        <view class="cc" style="margin-top: 120rpx;">
+          <view class="cc2"></view>
+          <view class="cc1 flex f-c-c">
+            <text>深度全面具体精准的「学业评估」</text>
+            <image src="../../assets/img/tt1.icon.png" mode="" class="tt1-img"/>
+          </view>
+          <view class="flex f-c-c" style="margin-bottom: 24rpx;">
+            <image src="../../assets/img/img1.png" mode="widthFix" style="width:526rpx"/>
+          </view>
+          <view class="ll1 flex">
+            <view class="f-1 ll1-t1 flex f-col f-yc">
+            <image src="../../assets/img/t3-c1.png" mode="" class="ll1-t1-img"/>
+            <view>1次教育</view>
+            <view>学习体检</view>
+            </view>
+            <view class="f-1 ll1-t1 flex f-col f-yc">
+            <image src="../../assets/img/t3-c2.png" mode="" class="ll1-t1-img"/>
+            <view>1份全面</view>
+            <view>对比报告</view>
+            </view>
+            <view class="f-1 ll1-t1 flex f-col f-yc">
+            <image src="../../assets/img/t3-c3.png" mode="" class="ll1-t1-img"/>
+            <view>1套精准</view>
+            <view>提升规划</view>
+            </view>
+          </view>
+          <view class="ll2">
+            <view class="tb-header flex">
+              <view class="cell f-1">10大维度</view>
+              <view class="cell cell2">66 个关键因素</view>
+              <view class="cell f-1">效应量</view>
+              <view class="cell f-1" style="border-right: 0;">影响分数</view>
+            </view>
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">学校老师</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>教师集体效能</view>
+                <view class='cell0 f-1'>教师评估</view>
+                <view class='cell0 f-1'>教师可信度</view>
+                <view class='cell0 f-1'>师生关系</view>
+                <view class='cell0 f-1'>教师表达清晰</view>
+                <view class='cell0 f-1 bb0'>教辅资料</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>1.34</view>
+                <view class='cell0 f-1'>1.29</view>
+                <view class='cell0 f-1'>1.09</view>
+                <view class='cell0 f-1'>0.62</view>
+                <view class='cell0 f-1'>0.85</view>
+                <view class='cell0 f-1 bb0'>0.52</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>40</view>
+                <view class='cell0 f-1'>39</view>
+                <view class='cell0 f-1'>33</view>
+                <view class='cell0 f-1'>19</view>
+                <view class='cell0 f-1'>26</view>
+                <view class='cell0 f-1 bb0'>16</view>
+              </view>
+            
+              
+              
+            
+            </view>
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">父母支持</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>反馈(强化和提示)</view>
+                <view class='cell0 f-1'>家长辅导</view>
+                <view class='cell0 f-1'>社会地位</view>
+                <view class='cell0 f-1 bb0'>父母期待</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>1.01</view>
+                <view class='cell0 f-1'>0.64</view>
+                <view class='cell0 f-1'>0.56</view>
+                <view class='cell0 f-1 bb0'>0.5</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>30</view>
+                <view class='cell0 f-1'>19</view>
+                <view class='cell0 f-1'>17</view>
+                <view class='cell0 f-1 bb0'>15</view>
+              </view>
+            </view>
+      
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">学习环境</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>班级氛围</view>
+                <view class='cell0 f-1'>家庭氛围</view>
+                <view class='cell0 f-1'>同伴帮助</view>
+                <view class='cell0 f-1 bb0'>课堂讨论</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>0.82</view>
+                <view class='cell0 f-1'>0.44</view>
+                <view class='cell0 f-1'>0.68</view>
+                <view class='cell0 f-1 bb0'>0.82</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>25</view>
+                <view class='cell0 f-1'>13</view>
+                <view class='cell0 f-1'>20</view>
+                <view class='cell0 f-1 bb0'>25</view>
+              </view>
+            </view>
+            <block wx:if="{{isExpand}}">
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">计划执行</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>计划和预期</view>
+                <view class='cell0 f-1'>挑战型目标</view>
+                <view class='cell0 f-1'>明确目标</view>
+                <view class='cell0 f-1'>管理努力</view>
+                <view class='cell0 f-1'>时间管理</view>
+                <view class='cell0 f-1'>专注力</view>
+                <view class='cell0 f-1'>执行能力</view>
+                <view class='cell0 f-1 bb0'>理解学习价值</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>0.83</view>
+                <view class='cell0 f-1'>0.6</view>
+                <view class='cell0 f-1'>0.44</view>
+                <view class='cell0 f-1'>0.77</view>
+                <view class='cell0 f-1'>0.47</view>
+                <view class='cell0 f-1'>0.48</view>
+                <view class='cell0 f-1'>0.62</view>
+                <view class='cell0 f-1 bb0'>0.46</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>25</view>
+                <view class='cell0 f-1'>18</view>
+                <view class='cell0 f-1'>13</view>
+                <view class='cell0 f-1'>23</view>
+                <view class='cell0 f-1'>14</view>
+                <view class='cell0 f-1'>14</view>
+                <view class='cell0 f-1'>19</view>
+                <view class='cell0 f-1 bb0'>14</view>
+              </view>
+            </view>
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">阅读写作</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>语言文字应用</view>
+                <view class='cell0 f-1'>文言文阅读</view>
+                <view class='cell0 f-1'>综合阅读</view>
+                <view class='cell0 f-1'>现代文阅读</view>
+                <view class='cell0 f-1'>反复精读</view>
+                <view class='cell0 f-1'>写作项目</view>
+                <view class='cell0 f-1'>迁移策略</view>
+                <view class='cell0 f-1'>归纳总结</view>
+                <view class='cell0 f-1 bb0'>评估反思</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>0.74</view>
+                <view class='cell0 f-1'>0.8</view>
+                <view class='cell0 f-1'>0.57</view>
+                <view class='cell0 f-1'>0.8</view>
+                <view class='cell0 f-1'>0.8</view>
+                <view class='cell0 f-1'>0.53</view>
+                <view class='cell0 f-1'>0.75</view>
+                <view class='cell0 f-1'>0.75</view>
+                <view class='cell0 f-1 bb0'>0.75</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>22</view>
+                <view class='cell0 f-1'>24</view>
+                <view class='cell0 f-1'>17</view>
+                <view class='cell0 f-1'>24</view>
+                <view class='cell0 f-1'>24</view>
+                <view class='cell0 f-1'>16</view>
+                <view class='cell0 f-1'>23</view>
+                <view class='cell0 f-1'>23</view>
+                <view class='cell0 f-1 bb0'>23</view>
+              </view>
+            </view>
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">学习情绪</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>挫折</view>
+              <view class='cell0 f-1'>孤立</view>
+                <view class='cell0 f-1'>愤怒</view>
+                <view class='cell0 f-1'>抑郁</view>
+                <view class='cell0 f-1'>焦虑</view>
+                <view class='cell0 f-1'>拖延</view>
+                <view class='cell0 f-1'>自我调节</view>
+                <view class='cell0 f-1 bb0'>学习状态</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>-0.04</view>
+                <view class='cell0 f-1'>-0.26</view>
+                <view class='cell0 f-1'>-0.65</view>
+                <view class='cell0 f-1'>-0.3</view>
+                <view class='cell0 f-1'>-0.4</view>
+                <view class='cell0 f-1'>-0.41</view>
+                <view class='cell0 f-1'>-0.51</view>
+                <view class='cell0 f-1 bb0'>-0.51</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>2</view>
+                <view class='cell0 f-1'>16</view>
+                <view class='cell0 f-1'>39</view>
+                <view class='cell0 f-1'>18</view>
+                <view class='cell0 f-1'>24</view>
+                <view class='cell0 f-1'>25</view>
+                <view class='cell0 f-1'>15</view>
+                <view class='cell0 f-1 bb0'>15</view>
+              </view>
+            </view>
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">主动学习</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>寻求帮助</view>
+              <view class='cell0 f-1'>自主学习</view>
+                <view class='cell0 f-1'>掌控学习</view>
+                <view class='cell0 f-1'>自我效能</view>
+                <view class='cell0 f-1'>不贴标签</view>
+                <view class='cell0 f-1 bb0'>加速学习</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>0.73</view>
+                <view class='cell0 f-1'>0.67</view>
+                <view class='cell0 f-1'>0.67</view>
+                <view class='cell0 f-1'>0.64</view>
+                <view class='cell0 f-1'>0.61</view>
+                <view class='cell0 f-1 bb0'>0.53</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>22</view>
+                <view class='cell0 f-1'>20</view>
+                <view class='cell0 f-1'>20</view>
+                <view class='cell0 f-1'>19</view>
+                <view class='cell0 f-1'>18</view>
+                <view class='cell0 f-1 bb0'>16</view>
+              </view>
+            </view>
+
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">元认知</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>认知任务分析</view>
+              <view class='cell0 f-1'>自我评估</view>
+                <view class='cell0 f-1'>元认知策略</view>
+                <view class='cell0 f-1'>学习策略优化</view>
+                <view class='cell0 f-1 bb0'>有效失败</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>1.09</view>
+                <view class='cell0 f-1'>0.96</view>
+                <view class='cell0 f-1'>0.52</view>
+                <view class='cell0 f-1'>0.54</view>
+                <view class='cell0 f-1 bb0'>0.43</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>33</view>
+                <view class='cell0 f-1'>29</view>
+                <view class='cell0 f-1'>16</view>
+                <view class='cell0 f-1'>16</view>
+                <view class='cell0 f-1 bb0'>13</view>
+              </view>
+            </view>
+
+            <view class="tb-row flex">
+              <view class="cell f-1 flex f-col">学习动机</view>
+              <view class="cell cell2 flex f-col">
+                <view class='cell0 f-1'>好奇心</view>
+              <view class='cell0 f-1'>内驱力</view>
+                <view class='cell0 f-1'>学习动力</view>
+                <view class='cell0 f-1'>成就感</view>
+                <view class='cell0 f-1'>教师期待</view>
+                <view class='cell0 f-1'>自我奖惩</view>
+                <view class='cell0 f-1 bb0'>厌学</view>
+              </view>
+              <view class="cell f-1 flex f-col">
+                <view class='cell0 f-1'>0.74</view>
+                <view class='cell0 f-1'>0.94</view>
+                <view class='cell0 f-1'>0.48</view>
+                <view class='cell0 f-1'>0.54</view>
+                <view class='cell0 f-1'>0.58</view>
+                <view class='cell0 f-1'>0.7</view>
+                <view class='cell0 f-1 bb0'>-0.46</view>
+              </view>
+              <view class="cell f-1 flex f-col" style="border-right: 0;">
+                <view class='cell0 f-1'>22</view>
+                <view class='cell0 f-1'>28</view>
+                <view class='cell0 f-1'>14</view>
+                <view class='cell0 f-1'>16</view>
+                <view class='cell0 f-1'>17</view>
+                <view class='cell0 f-1'>21</view>
+                <view class='cell0 f-1 bb0'>28</view>
+              </view>
+            </view>
+          </block>
+          </view>
+          <view class="tb-foot flex f-c-c {{isExpand ? '' : 'foot-notExpand'}}">
+            <view bindtap="changExpand">
+              <van-icon name="{{isExpand ? 'arrow-up' : 'arrow-down'}}"/>
+              <text style="padding-left:10rpx">{{isExpand ? '收起' : '查看全部'}}</text>
+            </view>
+          </view>
+        </view>
+
+        <view class="cc" style="margin-top: 120rpx;">
+          <view class="cc2"></view>
+          <view class="cc1 flex f-c-c">
+            <text>你将获得</text>
+            <image src="../../assets/img/tt1.icon.png" mode="" class="tt1-img"/>
+          </view>
+          <image src="../../assets/img/card-0.png" mode="widthFix" class="img1 mb-48" />
+          <image src="../../assets/img/card-1.png" mode="widthFix" class="img1 mb-48"/>
+          <image src="../../assets/img/card-2.png" mode="widthFix" class="img1"/>
+          <image src="../../assets/img/card-3.png" mode="widthFix" class="img1 mb-48" style="position: relative;top: -50rpx;"/>
+        </view>
+
+        <view class="boss">
+          <image src='../../assets/img/talk-2.png' mode="widthFix"  class="talk2"></image>
+          <scroll-view class="boss-t1" style="height: 1000rpx;" scroll-y="{{true}}">
+           <image src='../../assets/img/boss.png' mode="widthFix" class="img1"></image>
+           <view class="boss-text">
+           <text> 人们常说，选择比努力更重要，而选择正确与否则取决于认知。\n</text>
+           <text>决定孩子人生命运的关键选择就那么几次，高考无疑是其中重要的一次。\n</text>
+           <text>然而，多年的教育经验让我发现，大多数人不具备做出关键抉择的认知。\n</text>
+           <text>当这些人在求职时，面对只青睐211、985毕业生的大企业、好机会时，只能无奈长叹：“我当初要是好好学习就好了。”\n</text>
+           <text>所以我特别理解，很多家长因为自己曾经的这些遗憾，不希望孩子重蹈覆辙，因此用尽全力推动孩子努力学习。\n</text>
+           <text>这份沉甸甸的爱子之心，让我深感敬佩。\n</text>
+           <text>同时，我也深深体会到家长们的迷茫与焦虑，那种对孩子未来不确定性的担忧。\n</text>
+           <text>所以，当我在港大读教育研究生，在浩如烟海的教育研究文献中发现“效应量”时，欣喜若狂。\n</text>
+            <text>它意味著教育不再是混沌不明、主观臆断、无法量化的。\n</text>
+            <text>效应量，这个直观明确的量化指标，清晰地告诉我们每一个因素对学习的影响程度。\n</text>
+            <text>这意味着孩子们每一分每一秒的努力都可以被科学地分配，每一份投入都能转化为可见的成效。\n</text>
+            <text>怀抱着让教育不再焦虑的愿景，我设计开发了“因材诊学”和“金榜之路”。\n</text>
+            <text>这两个产品不仅仅是为了让教育变得可视化，更是为了让学业成就可以被规划和预见。\n</text>
+            <text>焦虑，说到底，是对未来不确定性的担忧。\n</text>
+            <text>“金榜之路”就是为了减少这种不确定性而存在的。\n</text>
+            <text>它能够清晰地告诉你，根据孩子目前的学习能力，他们考上不同层次大学的概率是多少。\n</text>
+            <text>如果希望更进一步，它还能指出，改进哪些效应量，孩子考入顶尖大学的概率会增加。\n</text>     
+            <text>我坚信这结果的可靠性，因为它们不是建立在我个人主观之上，而是汇聚了来自全国各大高校大学生的数据。\n</text>   
+            <text>在这里，我要感谢这些大学生，感谢你们对中国教育作出的贡献。\n</text>   
+            <text>因为看见，所以相信！\n</text>   
+            <text>你们的真实激励着现在的孩子，让他们相信未来自己也能进入理想的学府。\n</text>   
+            <text>最后，我想对每一位家长和孩子们说，\n</text>   
+            <text>不论目前的测试结果显示何种水平，请相信\n</text>   
+            <text>当前的学习并不决定未来的命运。\n</text>
+            <text>学习是一场不断进化的动态过程，未来充满可能性。\n</text>
+            <text>每一点的改变，都可能带来未来的巨大成功。\n</text>
+            <text>南美洲的一只蝴蝶扇动翅膀，会引发德克萨斯州的一场龙卷风。\n</text>
+            <text>现在，走上“金榜之路”，扇动你的翅膀，去引爆成长的飓风吧！\n</text>
+           </view>
+           <view style="width: 100%;height: 220rpx;"></view>
+          </scroll-view>
+         
+          <image src='../../assets/img/talk-0.png' mode="widthFix" class="talk1"></image>
+          <image src='../../assets/img/talk-1.png' mode="widthFix" class="talk1"></image>
+        </view>
+
+        <view class="cc" style="margin-top: 120rpx;">
+          <view class="cc2"></view>
+          <view class="cc1 flex f-c-c">
+            <text>专业研发团队</text>
+            <image src="../../assets/img/tt1.icon.png" mode="" class="tt1-img"/>
+          </view>
+          <view class="team-text">
+            “金榜之路”研发团队成员分别为香港大学、香港城市大学、东南大学、南京航空航天大学、加拿大麦吉尔大学等世界一流高校的教育学及人工智能领域博士、硕士。
+          </view>
+          <view class="flex" style="gap:16rpx;margin:8px 0 32rpx 0">
+          <view class="team-li f-1 flex f-col f-c-c">
+            <image src="../../assets/img/school-1.png" class="team-img"/>
+            <view style="height: 60rpx;">香港大学</view>
+          </view>
+          <view class="team-li f-1 flex f-col f-c-c">
+            <image src="../../assets/img/school-2.png" class="team-img"/>
+            <view style="height: 60rpx;">东南大学</view>
+          </view>
+          <view class="team-li f-1 flex f-col f-c-c" >
+            <image src="../../assets/img/school-3.png" class="team-img" style="height: 144rpx;"/>
+            <view style="height: 60rpx;" class="flex f-col f-yc">
+                <text>加拿大\n</text>
+                <text>麦吉尔大学</text>
+            </view>
+          </view>
+          
+          </view>
+          <view style="width:100%;height:1rpx"></view>
+        </view>
+        <view class="cc" style="margin-top: 120rpx;">
+          <view class="cc2"></view>
+          <view class="cc1 flex f-c-c">
+            <text>评估理论依据</text>
+            <image src="../../assets/img/tt1.icon.png" mode="" class="tt1-img"/>
+          </view>
+          <view class="team-text">
+            <text>本评估基于「教育圣经」研发，以墨尔本大学约翰·哈蒂教授团队30年的研究成果为基础，对13万 2000 多项教育文献和4亿多学生数据进行了元分析，从中分析出2000 多个影响学习成绩的因素。\n</text>
+    在此基础上精心挑选出66项最符合中国教育环境的要素。我们的评估体系采用实证和数据驱动的方法，确保了评估的科学性和精准性。
+          </view>
+          <view class="literature">
+            <text>部分参考文献</text>
+
+            <text>
+    Fong, C. J., Kim, Y., Davis, C. W., Hoang, T., & Kim, Y. W. (2017). A meta-analysis on critical thinking and Community College Student Achievement. Thinking Skills and Creativity, 26, 71–83. https://doi.org/10.1016/j.tsc.2017.06.002
+    Lysakowski, R. S., & Walberg, H. J. (1982). 
+    Instructional effects of cues, participation, and corrective feedback: A quantitative synthesis. American Educational Research Journal, 19(4), 559. https://doi.org/10.2307/1162544
+    Supplemental material for accuracy of teachers’ judgments of students’ academic achievement: A meta-analysis. (2012). Journal of Educational Psychology. https://doi.org/10.1037/a0027627.supp
+            </text>
+          </view>
+          <view style="width:100%;height:1rpx"></view>
+        </view>
+        <view class="cc" style="margin-top: 120rpx;">
+          <view class="cc2"></view>
+          <view class="cc1 flex f-c-c">
+            <text>评估须知</text>
+            <image src="../../assets/img/tt1.icon.png" mode="" class="tt1-img"/>
+          </view>
+          <view class="warn">
+            <text selectable="true">1.本评估每次下单仅能评估一科，若需要其他科目评估，可以重复下单。\n2.付费成功后需选择诊学报告，如没有诊学报告，建议返回主页进行诊学测评。\n3.购买的评估报告均永久保存在主页「诊学记录-金榜之路」中，进入即可查看报告。\n4.本评估为虚拟内容服务，一经购买概不退款，感谢您的理解。</text>
+          </view>
+          <view style="width:100%;height:1rpx"></view>
+        </view>
+    </view>
+
+    <view class="footer-box flex f-yc">
+      <van-icon name="arrow-left" size='24px' color='#4E5969' bind:click='goBack'/>
+      <view class="money-box flex f-col">
+        <view class="red-text"><text style="font-size: 24rpx;">¥</text>29.9</view>
+        <view class="money-old">原价：¥99</view>
+      </view>
+      <view class="money-btn f-1 flex f-c-c">立即评估</view>
+    </view>
+
+
+</scroll-view>

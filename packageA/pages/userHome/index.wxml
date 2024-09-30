@@ -1,0 +1,91 @@
+<view class="userHome">
+  <view class="top">
+    <header
+      title=""
+      bgImage="/pages/assets/img/header.png"
+      hasLogo="{{ true }}"
+    ></header>
+    <view class="t12">
+      <view class="t1 f-c-c">
+        <view class="t1-c flex f-yc">
+          <view class="t1-l"></view>
+          <view class="t1-r f-1 flex f-col">
+            <view class="name1">微信秀秀秀</view>
+            <view class="flex t1-r-b">
+              <view
+                class="f-1 flex f-col"
+                style="justify-content: space-between"
+              >
+                <view class="name2">诊学ID</view>
+                <view class="name3">adsadsadsadsad</view>
+              </view>
+              <view
+                class="f-1 flex f-col"
+                style="justify-content: space-between"
+              >
+                <view class="name2">免费金榜之路</view>
+                <view class="name3">1<text class="name4">次</text></view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <image src="/pages/assets/img/user-card.png" mode="" class="user-img" />
+      </view>
+
+      <view class="t2">
+        <view class="tab-box flex f-yc">
+          <view
+            class="{{ tabIdx == 1 ? 'tab-li-selected' : 'tab-li' }}"
+            bindtap="changeTab"
+            data-idx="1"
+          >
+            因材诊学
+            <image
+              src="/pages/assets/img/tab-select.png"
+              mode=""
+              class="tab-selected-icon"
+              wx:if="{{ tabIdx == 1 }}"
+            />
+          </view>
+          <view
+            class="{{ tabIdx == 2 ? 'tab-li-selected' : 'tab-li' }}"
+            bindtap="changeTab"
+            data-idx="2"
+          >
+            金榜之路
+            <image
+              src="/pages/assets/img/tab-select.png"
+              mode=""
+              class="tab-selected-icon"
+              wx:if="{{ tabIdx == 2 }}"
+            />
+          </view>
+        </view>
+     
+
+        <view class="btn-ul flex f-yc">
+          <view
+            wx:for="{{ queryList }}"
+            wx:for-item="item"
+            wx:key="value"
+            data-value="{{ item.value }}"
+            bindtap="changeQueryValue"
+            class="btn-li flex f-c-c {{queryValue == item.value ? 'btn-li-selected' : ''}}"
+          >
+            {{ item.label }}
+          </view>
+        </view>
+      </view>
+      <image src="/pages/assets/img/header2.png" mode="" class="img-bg" />
+    </view>
+  </view>
+  <scroll-view class="main flex f-col f-yc" scroll-y="{{ true }}">
+    <card></card>
+    <card></card>
+    <card></card>
+    <card></card>
+  </scroll-view>
+  <view class="t3 flex f-c-c">
+    <view class="t3-btn f-c-c" bindtap="goHome">返回</view>
+  </view>
+</view>

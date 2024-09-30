@@ -1,0 +1,86 @@
+<view class="homePage">
+
+  <header title="" bgImage="/pages/assets/img/header.png"></header>
+  <view class="t1 flex f-yc" >
+    <view class="f-1 flex f-col t1-left">
+      <image src="/pages/assets/img/logo-text.png" mode="" class="logo-text" />
+      <view class="logo-tip">先诊断，再干预，先理解，再解决</view>
+    </view>
+    <image src="/pages/assets/img/t1-icon.png" mode="" class="t1-icon" />
+    <image src="/pages/assets/img/header2.png" mode="" class="t1-bg"/>
+  </view>
+  <scroll-view class="t2" 	scroll-y='{{true}}'>
+  <view class="card flex f-yc" bindtap='cardClick' data-value='chinese'>
+  <view class="card-left cl-1 flex f-c-c">
+  <image src="/pages/assets/img/chinese-icon.png" alt="" class="cl-icon"/>
+  </view>
+  <view class="card-right f-1 flex f-col">
+    <view class="cr-t1">
+    <view class="cr-t1-1" style="margin-bottom: 8rpx;">语文</view>
+    <view class="cr-t1-2">精准解析语文学习模式</view>
+    </view>
+    <view class='cr-t2 flex f-yc'>
+     <text class="cr-t1-2">293人使用</text>
+     <image src="/pages/assets/img/avatorGroup.png" class="avator-img"/>
+    </view>
+  </view>
+  </view>
+
+  <view class="card flex f-yc" bindtap='cardClick' data-value='math'>
+  <view class="card-left cl-2 flex f-c-c">
+  <image src="/pages/assets/img/math-icon.png" alt="" class="cl-icon"/>
+  </view>
+  <view class="card-right f-1 flex f-col">
+    <view class="cr-t1">
+    <view class="cr-t1-1" style="margin-bottom: 8rpx;">数学</view>
+    <view class="cr-t1-2">全面评估数学学习模式</view>
+    </view>
+    <view class='cr-t2 flex f-yc'>
+     <text class="cr-t1-2">293人使用</text>
+     <image src="/pages/assets/img/avatorGroup.png" class="avator-img"/>
+    </view>
+  </view>
+  </view>
+
+  <view class="card flex f-yc" bindtap='cardClick' data-value='english'>
+  <view class="card-left cl-3 flex f-c-c">
+  <image src="/pages/assets/img/english-icon.png" alt="" class="cl-icon"/>
+  </view>
+  <view class="card-right f-1 flex f-col">
+    <view class="cr-t1">
+    <view class="cr-t1-1" style="margin-bottom: 8rpx;">英语</view>
+    <view class="cr-t1-2">系统分析英语学习模式</view>
+    </view>
+    <view class='cr-t2 flex f-yc'>
+     <text class="cr-t1-2">293人使用</text>
+     <image src="/pages/assets/img/avatorGroup.png" class="avator-img"/>
+    </view>
+  </view>
+  </view>
+  
+  <view class="card flex f-yc" bindtap='cardClick' data-value='gold'>
+  <view class="card-left cl-4 flex f-c-c">
+  <image src="/pages/assets/img/gold-icon.png" alt="" class="cl-icon"/>
+  </view>
+  <view class="card-right f-1 flex f-col">
+    <view class="cr-t1">
+    <view class="cr-t1-1" style="margin-bottom: 8rpx;">金榜之路</view>
+    <view class="cr-t1-2">名校之路，精准早规划</view>
+    </view>
+    <view class='cr-t2 flex f-yc'>
+     <text class="cr-t1-2">293人使用</text>
+     <image src="/pages/assets/img/avatorGroup.png" class="avator-img"/>
+    </view>
+  </view>
+  </view>
+
+
+
+
+  </scroll-view>
+  <!-- <view class="t3 flex f-c-c">
+  <view class="t3-btn f-c-c">分享给朋友</view>
+  </view> -->
+  <footer confirmName="分享给朋友"  bind:next='doShare'></footer>
+ 
+</view>

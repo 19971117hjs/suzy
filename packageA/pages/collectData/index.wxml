@@ -1,0 +1,92 @@
+<view class="collect-box">
+  <van-nav-bar
+  title=""
+  left-arrow
+  bind:click-left="goBack"
+  fixed='{{true}}'
+  custom-style='background-color:transparent;'
+  custom-class='my-nav'
+/>
+  <view class="top flex f-xc">
+    <view class="t-user flex f-col f-c-c">
+      <view class="user-1"></view>
+      <view class="user-2">诊学ID：329013H</view>
+    </view>
+   
+   <image src="{{bgImg}}" mode="" class="t-bg"/>
+  </view>
+  <scroll-view scroll-y="{{true}}" class="scroll-box">
+    <view class="form-box flex f-col">
+      <view class="form-label">姓名</view>
+      <view class="form-li {{ formData.name=='' && isCheck ? 'err-li' :''}}">
+        <van-field
+        value="{{ formData.name }}"
+        placeholder="最多输入20个字符"
+        border="{{ false }}"
+        bind:change="changeName"
+        custom-style="height: 82rpx;background-color:transparent;color:rgba(78, 89, 105, 1);"
+        maxlength='{{20}}'
+      />
+      </view>
+      <view class="form-label">性别</view>
+      <view class="form-li {{ formData.sexName=='' && isCheck ? 'err-li' :''}}">
+        <van-cell title="{{formData.sexName===''? '请选择' : formData.sexName}}" 
+        data-value='sex'
+        bind:click="showPopup"  custom-style="background-color:transparent;color:rgba(78, 89, 105, 1);" title-style="flex:1;display:block !important;{{formData.sexName==='' ? 'color:#c8c9cc' :'color:#323233'}}"/>
+      </view>
+      <view class="form-label">年级</view>
+      <view class="form-li {{ formData.gradeName=='' && isCheck ? 'err-li' :''}}">
+        <van-cell title="{{formData.gradeName==='' ? '请选择' : formData.gradeName}}" 
+        data-value='grade'
+        bind:click="showPopup"  custom-style="background-color:transparent;color:rgba(78, 89, 105, 1);" title-style="flex:1;display:block !important;{{formData.gradeName==='' ? 'color:#c8c9cc' :'color:#323233'}}"/>
+      </view>
+
+      <view class="form-label">班级排名</view>
+      <view class="form-li {{ formData.rankName=='' && isCheck ? 'err-li' :''}}">
+        <van-cell title="{{formData.rankName==='' ? '请选择' : formData.rankName}}" 
+        data-value='rank'
+        bind:click="showPopup"  custom-style="background-color:transparent;color:rgba(78, 89, 105, 1);" title-style="flex:1;display:block !important;{{formData.rankName==='' ? 'color:#c8c9cc' :'color:#323233'}}"/>
+      </view>
+    </view>
+  </scroll-view>
+
+
+  <footer confirmName="下一步"  bind:next='openMsg'>
+  </footer>
+    <van-popup show="{{ showDict.sex }}" position="bottom" round >
+        <van-picker
+          show-toolbar
+          title="选择性别"
+          data-value='sex'
+          columns="{{ selectDict.sex }}"
+          bind:cancel="onClosePopup"
+          bind:confirm="onConfirmPopup"
+          default-index="{{ formData.sex }}"
+        />
+    </van-popup>
+
+    <van-popup show="{{ showDict.grade }}" position="bottom" round >
+        <van-picker
+          show-toolbar
+          title="年级"
+          data-value='grade'
+          columns="{{ selectDict.grade }}"
+          bind:cancel="onClosePopup"
+          bind:confirm="onConfirmPopup"
+          default-index="{{ formData.grade }}"
+        />
+    </van-popup>
+
+    <van-popup show="{{ showDict.rank }}" position="bottom" round >
+        <van-picker
+          show-toolbar
+          title="班级排名"
+          data-value='rank'
+          columns="{{ selectDict.rank }}"
+          bind:cancel="onClosePopup"
+          bind:confirm="onConfirmPopup"
+          default-index="{{ formData.rank }}"
+        />
+    </van-popup>
+</view>
+<msgDiaglog  id='msgDialogId' bind:ok='goNext'></msgDiaglog>

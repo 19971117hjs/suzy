@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/userHome/index",
+        "pages/subjectDetail/index",
+        "pages/collectData/index",
+        "pages/evaluation/index"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/goldHome/index",
+        "pages/collect/index"
+      ]
+    },
+    {
+      "root": "gold",
+      "pages": [
+        "pages/home/index"
+      ]
+    }
+
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "header": "pages/components/header/index",
+    "footer": "pages/components/footer/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

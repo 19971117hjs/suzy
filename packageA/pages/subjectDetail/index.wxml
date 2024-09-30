@@ -1,0 +1,158 @@
+<view class="homePage">
+
+<header title="" bgImage="/pages/assets/img/header.png" hasNull='{{true}}'></header>
+<view class="t1 flex f-yc" >
+  <view class="f-1 flex f-col t1-left">
+   <view class="title-box">
+   <text class='tb-1'>{{subjectDict[subjectKey].title}}</text>
+   <text class='tb-2'>学习诊断</text>
+   </view>
+    <view class="logo-tip">{{subjectDict[subjectKey].msg}}</view>
+  </view>
+  <image src="/pages/assets/img/header2.png" mode="" class="t1-bg"/>
+</view>
+<scroll-view class="t2" scroll-y='{{true}}'>
+  <view class="t2-c1">
+    <view class="flex f-yc">
+      <view class="ll"></view>
+      <view class="ll-text">全球领先学习诊断工具</view>
+    </view>
+    <view class="ll-text-sub">基于3亿学生数据打造</view>
+    <view class="ll-box-ul flex f-yc">
+      <view class="ll-box-li f-1 flex f-yc">
+      <image src="../../assets/img/bb-li1.png" class="bb-li-img"/>
+      <view class="f-1">
+        <view class="bb-li-text1">66题</view>
+        <view class="bb-li-text2">题目数量</view>
+      </view>
+      </view>
+      <view class="ll-box-li f-1 flex f-yc">
+        <image src="../../assets/img/bb-li1.png" class="bb-li-img"/>
+        <view class="f-1">
+          <view class="bb-li-text1">15分钟</view>
+        <view class="bb-li-text2">预计用时</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='t2-c1' style="margin-top:24rpx">
+    <view class="flex f-yc">
+      <view class="ll"></view>
+      <view class="ll-text">诊学作用</view>
+    </view>
+
+    <view class='tc-1'>
+      <view class="tc-1-t1 flex">
+        <view class="f-1 flex f-yc" style="gap:16rpx">
+          <image src="../../assets/img/circle.png" style="width:18rpx;height:18rpx"/>
+          <view class="tc-1-title">全面学习分析</view>
+        </view>
+
+        <view class="tc-1-img-box">
+          <image src="../../assets/img/c-right-border.png" class="tc-1-img"/>
+          <image src="../../assets/img/c-right-text.png"  style="position: absolute;z-index: 99;right: 15rpx;width:304rpx;height: 24rpx;top:30rpx"/>
+        </view> 
+         <!-- <view class="triangle-container">
+          <view class="triangle"></view>
+        </view>
+       <view class="tc-1-t1-r"></view>
+        <view class="tc-1-border-hack"></view> -->
+      </view> 
+      <view class="tc-1-t2 flex">
+        <text>10大关键维度<text class="fw-500">（父母支持、学校老师、学习环境、学习情绪、学习动机、学习习惯、阅读写作、计划执行、元认知、主动学习）</text>，全方位解析语文学习模式。</text>
+      </view>
+    </view>
+
+    <view class='tc-1'>
+      <view class="tc-1-t1 flex">
+        <view class="f-1 flex f-yc" style="gap:16rpx">
+          <image src="../../assets/img/circle.png" style="width:18rpx;height:18rpx"/>
+          <view class="tc-1-title">定量学习评估</view>
+        </view>
+        <view class="tc-1-img-box">
+          <image src="../../assets/img/c-right-border.png" class="tc-1-img"/>
+          <image src="../../assets/img/c-right-text.png"  style="position: absolute;z-index: 99;right: 15rpx;width:304rpx;height: 24rpx;top:30rpx"/>
+        </view> 
+      </view> 
+      <view class="tc-1-t2 flex">
+        <text>66道问题，精准评估语文学习模式，系统展示影响成绩的核心高效应量因素，预估大学概率。</text>
+      </view>
+    </view>
+
+    <view class='tc-1'>
+      <view class="tc-1-t1 flex">
+        <view class="f-1 flex f-yc" style="gap:16rpx">
+          <image src="../../assets/img/circle.png" style="width:18rpx;height:18rpx"/>
+          <view class="tc-1-title">精准提升规划</view>
+        </view>
+        <view class="tc-1-img-box">
+          <image src="../../assets/img/c-right-border.png" class="tc-1-img"/>
+          <image src="../../assets/img/c-right-text.png"  style="position: absolute;z-index: 99;right: 15rpx;width:304rpx;height: 24rpx;top:30rpx"/>
+        </view> 
+      </view> 
+      <view class="tc-1-t2 flex">
+        <text>根据诊断结果，识别制约成绩的关键因素，并提供清晰明确的个性化提升规划。</text>
+      </view>
+    </view>
+
+    <view class='tc-1'>
+      <view class="tc-1-t1 flex">
+        <view class="f-1 flex f-yc" style="gap:16rpx">
+          <image src="../../assets/img/circle.png" style="width:18rpx;height:18rpx"/>
+          <view class="tc-1-title">提升学习信心</view>
+        </view>
+        <view class="tc-1-img-box">
+          <image src="../../assets/img/c-right-border.png" class="tc-1-img"/>
+          <image src="../../assets/img/c-right-text.png"  style="position: absolute;z-index: 99;right: 15rpx;width:304rpx;height: 24rpx;top:30rpx"/>
+        </view> 
+      </view> 
+      <view class="tc-1-t2 flex">
+        <text>深入剖析学习情绪与动机，探索提升方向，激发学习潜能，全面提升效率与自信。</text>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='t2-c1' style="margin-top:24rpx">
+    <view class="flex f-yc">
+      <view class="ll"></view>
+      <view class="ll-text">诊学介绍</view>
+    </view>
+    <view class="ll-text-sub">因材诊学依据墨尔本大学教育学教授John Hattie团队历时25年的研究为基础编写而成。
+    </view>
+    <view class="dec-ul flex f-c-c">
+      <view class="f-1 flex f-col f-yc" style="gap: 8rpx;">
+        <image src="../../assets/img/dec1.png" mode="" class='dec-img'/>
+        <view class="dec-t1">13万多份</view>
+        <view class="dec-t2">研究文献</view>
+      </view>
+      <view class="f-1 flex f-col f-yc" style="gap: 8rpx;">
+        <image src="../../assets/img/dec2.png" mode="" class='dec-img'/>
+        <view class="dec-t1">3亿学生</view>
+        <view class="dec-t2">学习数据</view>
+      </view>
+      <view class="f-1 flex f-col f-yc" style="gap: 8rpx;">
+        <image src="../../assets/img/dec3.png" mode="" class='dec-img'/>
+        <view class="dec-t1">2000 多项</view>
+        <view class="dec-t2">影响成绩的因素</view>
+      </view>
+    </view>
+    <view class="dec-foot">
+      此研究开创性地使用效应量来量化不同学习因素对成绩的影响大小（如父母期待0.5，效应量为 0.5），效应量越大的因素，对成绩的影响就越大。
+    </view>
+  </view>
+
+</scroll-view>
+<!-- <view class="t3 flex f-c-c">
+  <view class="t3-btn-back f-c-c" bindtap='goBack'>返回</view>
+  <view class="t3-btn f-c-c" bindtap='goNext'>开始诊断</view>
+</view> -->
+
+<footer confirmName="开始诊断" hasBack="{{true}}" 
+  bind:back='goBack' bind:next='goNext'
+backName='返回'>
+</footer>
+
+
+</view>

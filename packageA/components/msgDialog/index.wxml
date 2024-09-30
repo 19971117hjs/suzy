@@ -1,0 +1,12 @@
+<van-overlay show="{{ isShow }}" >
+  <view class="wrapper">
+
+    <view class="block">
+      <image src="{{bgImg}}" mode="" class="t-bg"/>
+      <image src="{{logoImg}}" mode="" class="logo-img"/>
+      <view class="title-text">温馨提示</view>
+      <view class="content-text">{{content}}</view>
+      <view class="footer-btn1 f-c-c" bindtap='goNext'>确认</view>
+    </view>
+  </view>
+</van-overlay>

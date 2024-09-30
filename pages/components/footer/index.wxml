@@ -1,0 +1,4 @@
+<view class="footer flex f-c-c">
+  <view class="footer-btn-back f-c-c" bindtap='goBack' wx:if='{{hasBack}}'>{{backName}}</view>
+  <view class="footer-btn f-c-c f-1" bindtap='goNext'>{{confirmName}}</view>
+</view>

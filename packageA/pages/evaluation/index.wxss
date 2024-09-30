@@ -1,0 +1,127 @@
+.all-box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #F6F6F6;
+  z-index: 1;
+}
+.mystep{
+  border-radius: 8px !important;
+}
+.t1 {
+  position: relative;
+  height: 200rpx;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 2;
+  background-color: #F6F6F6;
+  background-size: cover;
+  /* background: linear-gradient(to bottom,  #FFD2A8,#FFEBD4); */
+
+
+  padding: 0 40rpx 0 40rpx;
+}
+.t1-bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* height: 100vh; */
+  z-index: -1;
+  background-color: #F6F6F6;
+}
+.top{
+  position: relative;
+  gap: 14rpx;
+  font-family: PingFang SC;
+font-size: 32rpx;
+font-weight: 500;
+text-align: left;
+color:#1D2729;
+padding-top: 42rpx;
+
+}
+.p1{
+  color:#3073FE;
+}
+
+.main{
+  width: 100%;
+  height: calc(100vh - 500rpx);
+  position: relative;
+  top: -50rpx;
+  z-index: 999;
+}
+.card{
+  margin: 0 auto;
+  width: calc(100% - 64rpx);
+  box-sizing: border-box;
+  /* height: 330rpx; */
+  padding: 24rpx;
+  gap: 32rpx;
+  border-radius: 18rpx;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 6px 0px #32595C1A;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; 
+}
+.que-title{
+font-family: PingFang SC;
+font-size: 32rpx;
+font-weight: 600;
+line-height: 44rpx;
+text-align: justify;
+margin-bottom: 72rpx;
+-webkit-tap-highlight-color: transparent; 
+
+}
+
+.que-li{
+  width: 100%;
+  box-sizing: border-box;
+  padding:24rpx;
+  border:2rpx solid #CBD4D6;
+  gap:16rpx;
+  border-radius:16rpx;
+  font-family: PingFang SC;
+font-size: 32rpx;
+font-weight: 500;
+line-height: 44.8rpx;
+color:#485C61;
+margin-bottom:48rpx;
+cursor: pointer;
+-webkit-tap-highlight-color: transparent; 
+
+}
+.que-radio{
+  width: 29rpx;
+height: 29rpx;
+border:2rpx solid #CBD4D6;
+border-radius: 50%;
+-webkit-tap-highlight-color: transparent; 
+}
+.que-radio1{
+  width: 28rpx;
+height: 28rpx;
+border:2rpx solid #FF6815;
+border-radius: 50%;
+background-color: #FF6815;
+-webkit-tap-highlight-color: transparent; 
+}
+.que-radio2{
+  width: 13rpx;
+height: 13rpx;
+border-radius: 50%;
+background-color: #FFFFFF;
+-webkit-tap-highlight-color: transparent; 
+}
+.li-select{
+  border-color: #FF6815;
+  color:#FF6815 !important;
+  background-color: #FFF6ED;
+}
+
+
+

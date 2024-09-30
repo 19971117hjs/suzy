@@ -1,0 +1,24 @@
+<!--packageA/components/card.wxml-->
+<view class="card-box flex f-col">
+  <view class="t1">asdasd</view>
+  <view class="t2 flex f-yc">
+  <view>测试日期：</view>
+  <view class="t2-value">2023.09.03 10:00</view>
+  </view>
+  <view class="t2 flex f-yc">
+  <view>测试日期：</view>
+  <view class="t2-value">2023.09.03 10:00</view>
+  </view>
+  <view class="t2 flex f-yc">
+  <view>测试日期：</view>
+  <view class="t2-value">2023.09.03 10:00</view>
+  </view>
+  <view class="top flex f-c-c">
+    <text class="ct-text">语文</text>
+   <image src="../img/card-top-right.png" mode="" class="ct-img"/>
+  </view>
+  <view class="bottom">
+  <view class="bt1">199.99</view>
+  <view class="bt2">学习力</view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+/**app.wxss**/
+page {
+  --nav-bar-icon-color: rgba(0, 0, 0, 0.9);
+}
+
+.flex{
+  display: flex
+}
+.f-yc{
+  align-items: center;
+}
+.f-xc{
+  justify-content: center;
+}
+.f-col{
+  flex-direction: column;
+}
+.f-1{
+  flex:1;
+}
+.f-c-c{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}

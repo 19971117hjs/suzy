@@ -1,0 +1,41 @@
+<view class="all-box">
+
+  <header title="" bgImage="/pages/assets/img/header.png" hasNull='{{true}}'></header>
+  <van-nav-bar
+  title="{{subjectDict[subjectKey].title}}诊学测评"
+  left-arrow
+  bind:click-left="goBack"
+  fixed='{{true}}'
+  custom-style="background-color:transparent"
+  />
+  <view class="t1" >
+    <image src="/pages/assets/img/header2.png" mode="" class="t1-bg"/>
+
+    <view class="top flex f-col">
+      <view>答题进度 <text class="p1">{{queIdx+1}}</text>/66</view>
+      <van-progress percentage="{{percentage}}" show-pivot='{{false}}' stroke-width='12'
+      track-color='#FAC981' color='linear-gradient(90deg, #FF6815 0%, #FF7325 100%)' custom-class='mystep'/>
+    </view>
+  </view>
+
+<scroll-view scroll-y="auto" class="main">
+  <view class="card">
+    <view class="que-title">
+      {{queIdx+1}}. {{queList[queIdx].name}}
+    </view>
+    <view class="que-li flex f-yc {{queList[queIdx].ansIdx === index ? 'li-select' : ''}}" wx:for="{{selectList}}" wx:for-item="item" wx:key="index"
+    data-value='{{index}}' bindtap='selectAns'>
+      <view class="que-radio1 flex f-c-c" wx:if="{{queList[queIdx].ansIdx === index}}">
+        <view class="que-radio2"></view>
+      </view>
+      <view wx:else class="que-radio"></view>
+      <view>{{item}}</view>
+    </view>
+  </view>
+</scroll-view>
+
+<footer confirmName="{{queIdx === 65 ? '提交' :'下一题'}}" hasBack="{{true}}" 
+  bind:back='last' bind:next='next'
+ backName="{{queIdx === 0 ? '返回' :'上一题'}}">
+</footer>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "homePage":"/pages/components/homePage/index"
+    
+  }
+}
