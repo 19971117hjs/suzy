@@ -11,7 +11,9 @@ custom-style="background:rgb(255,173,49,0.9814);z-index:99999"
 
 <view class="box1">
   <view class="t1 flex ">
-    <image src="../../assets/img/chinese.png" mode="" class="t1-img"/>
+    <image src="../../assets/img/chinese.png" mode="" class="t1-img" wx:if="{{subject=='chinese'}}"/>
+    <image src="../../assets/img/math.png" mode="" class="t1-img" wx:if="{{subject=='math'}}"/>
+    <image src="../../assets/img/english.png" mode="" class="t1-img" wx:if="{{subject=='english'}}"/>
   </view>
   <view class="t2 flex f-yc">
   <image src="../../assets/img/star-min.png" mode="" class="t2-img"/>
@@ -81,8 +83,14 @@ custom-style="background:rgb(255,173,49,0.9814);z-index:99999"
 </view>
 
 <view class="box3">
+<view wx:if="{{tabIdx==1}}">
   <image src="../../assets/img/box3-text1.png" mode="" style="width:352rpx;height:52rpx;"/>
   <view class="box3-t1">与目标院校的三位大学生进行10个维度对比</view>
+</view>
+<view wx:else>
+  <image src="../../assets/img/box3-text2.png" mode="" style="width:240rpx;height:52rpx;"/>
+  <view class="box3-t1">想要达到优化后的大学概率，需要进行改进的关键因素</view>
+</view>
 
 
   <view>
@@ -154,15 +162,26 @@ custom-style="background:rgb(255,173,49,0.9814);z-index:99999"
           
           <!-- <tab-box></tab-box> -->
       </view>
-      </van-sticky>
-      <tab-box></tab-box>
+    </van-sticky>
+    <tab-box tabIdx='{{tabIdx}}'></tab-box>
 
-
+   <view class="ad-box flex f-yc">
+     <view class="f-1 flex f-col" style="height: 160rpx;justify-content: space-around;">
+       <view>
+        <text class="ad-text">1V1规划报告深度解读，\n专属优化策略详细制定</text>
+       </view>
+       <view class="ad-bar flex f-yc">
+         <view>专属社群扫码进入</view>
+         <image src="../../../pages/assets/img/ad-bar.png" mode="" style="width:58rpx;height:26rpx"/>
+       </view>
+     </view>
+     <view style="width:160rpx;height:160rpx;background:#FFA61E;"></view>
+   </view>
     
     
   </view>
 
-  <view style="height: 300rpx;width: 100%;"></view>
+  <view style="height: 160rpx;width: 100%;"></view>
 </view>
 
 

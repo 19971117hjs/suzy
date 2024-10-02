@@ -8,7 +8,7 @@ Page({
     isShowMore: false,
     queryValue: 1,
     tabIdx: 1,
-    subject: "chinese",
+    subject: "math",
     subjectDict: {
       chinese: {
         title: "语文",
@@ -114,7 +114,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({ title: "语文" });
+    let titleDict = {
+      chinese:'语文',
+      math:'数学',
+      english:'英语'
+    }
+   
+    console.log('zzzzzz',this.data)
+    this.setData({ subject:'chinese',title: titleDict[this.data.subject] });
    
     wx.getSystemInfo({
       success: (res) => {

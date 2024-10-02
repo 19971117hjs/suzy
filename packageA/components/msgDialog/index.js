@@ -14,7 +14,7 @@ Component({
   data: {
     isShow:false,
     bgImg:'/packageA/assets/img/blue-bg.png',
-    logoImg:'/packageA/assets/img/msg-logo.png',
+    logoImg:'/packages/assets/img/msg-logo.png',
     content:'',
   },
 

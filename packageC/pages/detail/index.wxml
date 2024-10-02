@@ -1,0 +1,156 @@
+<view class="all-box">
+
+<header title="" bgImage="/pages/assets/img/header.png" hasNull='{{true}}'
+style="position: fixed;top: 0; z-index: 9999;width: 100%;"></header>
+<van-nav-bar
+title="{{subjectDict[subjectKey].title}}诊学报告"
+left-arrow
+bind:click-left="goBack"
+fixed='{{true}}'
+custom-style="background-color:transparent;z-index:9999"
+/>
+
+<scroll-view scroll-y="auto">
+  <view class="t1" style=" margin-top:{{navBarHeight}}px">
+  <image src="/pages/assets/img/header2.png" mode="" class="t1-bg"/>
+  <view class="t1-1 flex f-c-c">
+    <circle-progress percentage='{{userData.studyNum / 150}}'></circle-progress>
+    <view class="progress-box flex f-c-c f-col">
+      <view>{{userData.studyNum}}</view>
+      <view class="progress-box-text">学习力满分150</view>
+    </view>
+   
+  </view>
+  <view class="t1-foot flex f-yc">
+   <image src="../../assets/img/left.png" mode="" class="t1-foot-img"/>
+   <view class="f-1 flex f-c-c f-col">
+     <view class='t1-foot-text'>基于当前学习力，预估的大学层次为</view>
+     <view>{{schoolLevelList[userData.schoolLevel].label}}</view>
+   </view>
+   <image src="../../assets/img/right.png" mode="" class="t1-foot-img"/>
+  </view>
+</view>
+
+<view class="t2">
+  <view class="t2-1">Hi，{{userData.name}}</view>
+  <view class="t2-2">
+    你的{{subjectDict[subjectKey].title}}学习力超过约<text style="font-size: 48rpx;font-weight: 700;color:#FF6815">{{userData.per1}}</text>的学子
+  </view>
+  <view class="t2-3 flex f-col">
+    <view class="flex w100">
+      <view class="f-1 flex " style="justify-content: flex-end;">
+        <image src="../../assets/img/tag1.png" mode="" style="width:164rpx;height:48rpx"/>
+      </view>
+      <view class="t2-3-mid flex f-c-c"></view>
+      <view class="f-1">
+        <image src="../../assets/img/tag2.png" mode="" style="width:142rpx;height:48rpx"/>
+      </view>
+    </view>
+    <view class="flex w100" style="height: 70rpx;">
+      <view class="f-1 flex " style="justify-content: flex-end;">
+        <view class="flex x-end f-1 f-yc" style="gap:8rpx">
+          <view class="level-num">2.24%</view>
+          <view class="level-bar1" style="width:2.24%"></view>
+        </view>
+       
+      </view>
+      <view class="t2-3-mid flex f-c-c bb1">顶尖985</view>
+      <view class="f-1 flex">
+        <view class="flex f-1 f-yc" style="gap:8rpx">
+          <view class="level-bar2" style="width:{{userData.schoolLevelList[0]}}"></view>
+          <view class="level-num">{{userData.schoolLevelList[0]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="flex w100" style="height: 70rpx;">
+      <view class="f-1 flex " style="justify-content: flex-end;">
+        <view class="flex x-end f-1 f-yc" style="gap:8rpx">
+          <view class="level-num">4.9%</view>
+          <view class="level-bar1" style="width:4.9%"></view>
+        </view>
+       
+      </view>
+      <view class="t2-3-mid flex f-c-c bb1">重点211</view>
+      <view class="f-1 flex">
+        <view class="flex f-1 f-yc" style="gap:8rpx">
+          <view class="level-bar2" style="width:{{userData.schoolLevelList[1]}}"></view>
+          <view class="level-num">{{userData.schoolLevelList[1]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="flex w100" style="height: 70rpx;">
+      <view class="f-1 flex " style="justify-content: flex-end;">
+        <view class="flex x-end f-1 f-yc" style="gap:8rpx">
+          <view class="level-num">15.76%</view>
+          <view class="level-bar1" style="width:15.76%"></view>
+        </view>
+       
+      </view>
+      <view class="t2-3-mid flex f-c-c bb1">一本大学</view>
+      <view class="f-1 flex">
+        <view class="flex f-1 f-yc" style="gap:8rpx">
+          <view class="level-bar2" style="width:{{userData.schoolLevelList[2]}}"></view>
+          <view class="level-num">{{userData.schoolLevelList[2]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="flex w100" style="height: 70rpx;">
+      <view class="f-1 flex " style="justify-content: flex-end;">
+        <view class="flex x-end f-1 f-yc" style="gap:8rpx">
+          <view class="level-num">26.9%</view>
+          <view class="level-bar1" style="width:26.9%"></view>
+        </view>
+       
+      </view>
+      <view class="t2-3-mid flex f-c-c bb1">普通本科</view>
+      <view class="f-1 flex">
+        <view class="flex f-1 f-yc" style="gap:8rpx">
+          <view class="level-bar2" style="width:{{userData.schoolLevelList[3]}}"></view>
+          <view class="level-num">{{userData.schoolLevelList[3]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="flex w100" style="height: 70rpx;">
+      <view class="f-1 flex " style="justify-content: flex-end;">
+        <view class="flex x-end f-1 f-yc" style="gap:8rpx">
+          <view class="level-num">50.2%</view>
+          <view class="level-bar1" style="width:50.2%"></view>
+        </view>
+       
+      </view>
+      <view class="t2-3-mid flex f-c-c bb1">本科以下</view>
+      <view class="f-1 flex">
+        <view class="flex f-1 f-yc" style="gap:8rpx">
+          <view class="level-bar2" style="width:{{userData.schoolLevelList[4]}}"></view>
+          <view class="level-num">{{userData.schoolLevelList[4]}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  
+</view>
+<view class="bt2-t4">
+     <image src="../../assets/img/box3-bg1.png" mode="" class="bt2-t4-img"/>
+     <view class="bt2-t4-1">
+       <image src="../../assets/img/box3-title-icon.png" mode="" style="width:34rpx;height:32rpx"/>
+       <view class="bt2-t4-1bold">经大数据算法匹配</view>
+       <view style="margin-bottom: 10rpx;font-size: 28rpx;">与你当前学习力最相近的三名大学生分别是：</view>
+       <view class="bt2-t4-li" wx:for="{{userData.studentList}}" wx:key="index" style="{{index===2 ? 'border-bottom:0' : ''}}">
+         <view class="bt2-t4-li1">{{item.schoolName}}</view>
+         <view class="bt2-t4-li2">{{item.name}}</view>
+         <view class="bt2-t4-li3 flex f-yc">学习力：<text class="bt2-t4-li4">{{item.studyNum}}</text></view>
+
+       </view>
+       <view style="font-size: 20rpx;margin-top:16rpx">注：本次诊断结果基于参测人员的答题数据综合分析得出。受到多种主观因素的影响，所预估的大学层次仅做教育规划的参考。</view>
+      
+     </view> 
+</view>
+
+<view style="width: 100%;height: 800rpx;"></view>
+  
+</scroll-view>
+
+
+
+</view>

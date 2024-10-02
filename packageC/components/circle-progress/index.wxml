@@ -1,0 +1,2 @@
+<!--packageC/components/circle-progress/index.wxml-->
+<canvas type="2d" id="ring" class="progress-canvas"></canvas>

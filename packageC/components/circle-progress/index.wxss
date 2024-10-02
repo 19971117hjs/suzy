@@ -1,0 +1,9 @@
+
+.progress-canvas {
+  width: 500rpx;
+  height: 500rpx;
+  position: relative;
+  top: 60rpx;
+  /* padding-top: 150rpx; */
+  z-index: -1;
+}

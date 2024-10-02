@@ -32,8 +32,11 @@ Component({
         // wx.navigateTo({
         //   url: `/packageB/pages/goldHome/index`
         // });
-        wx.navigateTo({
-          url: `/gold/pages/home/index`
+        // wx.navigateTo({
+        //   url: `/gold/pages/home/index`
+        // });
+         wx.navigateTo({
+          url: `/packageC/pages/detail/index`
         });
 
       }else{

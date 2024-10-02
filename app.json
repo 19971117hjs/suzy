@@ -24,8 +24,13 @@
       "pages": [
         "pages/home/index"
       ]
+    },
+    {
+      "root": "packageC",
+      "pages": [
+        "pages/detail/index"
+      ]
     }
-
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -23,3 +23,6 @@ page {
   align-items: center;
   justify-content:center;
 }
+.x-end{
+ justify-content: flex-end;
+}
